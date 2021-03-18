@@ -1,9 +1,28 @@
-/*NORMALIZE*/
-*{
-padding: 0;
-margin: 0;
-display: block;
+/*NORMAILIZE*/
+* {
+  padding: 0;
+  margin: 0;
 }
 body{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 800px) 1fr; ;
+}
+body > *{
+    grid-column: 2/3;
+    text-align: center;
+    margin: 0 auto;
+}
+/*NORMAILIZE*/
+.myimage{
+    border-radius: 50%;
+}
+img.myimage{
+  width: 250px;
+  height: 350px;
+  border-radius: 50%;
+  transition: all .5s linear;
+}
+.flip{
+    transform:translateY(50px);
+    transition: all .5s linear;
 }
