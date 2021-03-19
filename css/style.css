@@ -1,28 +1,97 @@
+/* Color Theme Swatches in Hex */
+/* .escritorio-de-trabajo-de-fotografo-1-hex { color: #143840; }
+.escritorio-de-trabajo-de-fotografo-2-hex { color: #025951; }
+.escritorio-de-trabajo-de-fotografo-3-hex { color: #A68A38; }
+.escritorio-de-trabajo-de-fotografo-4-hex { color: #A69E94; }
+.escritorio-de-trabajo-de-fotografo-5-hex { color: #0D0D0D; } */
+
 /*NORMAILIZE*/
+
 * {
   padding: 0;
   margin: 0;
 }
-body{
-    display: grid;
-    grid-template-columns: 1fr minmax(300px, 800px) 1fr; ;
+body {
+  display: grid;
+  grid-template-columns: .5fr minmax(86px, 174px) minmax(200px, 916px) 0.5fr;
+  grid-template-rows: 16px 140px 156px minmax(497px, 2fr) 140px 16px;
+  overflow-x: hidden;
+  gap: 8px;
 }
-body > *{
-    grid-column: 2/3;
-    text-align: center;
-    margin: 0 auto;
+body > * {
+  grid-column: 3/4;
+  text-align: center;
+  margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
+nav {
+  display: block;
+  grid-column: 2/2;
+  grid-row: 2/4;
+  padding: 2rem 0;
+  width: 100%;
+
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav li {
+  margin: 1em 0;
+  list-style: none;
+}
+
 /*NORMAILIZE*/
-.myimage{
-    border-radius: 50%;
+html {
+  background: #a69e94;
 }
-img.myimage{
+nav {
+  background: radial-gradient(#143840, #025951);
+  box-shadow: 0px 2px 6px #0d0d0d;
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  color: #a69e94;
+  transition: all 0.5s ease-in-out;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: #a68a38;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.5s ease-in-out;
+}
+nav a:hover {
+  color: #a68a38;
+}
+nav a:hover::after {
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.bg {
+  background: #f1f1f1;
+  box-shadow: 0 0 12px #0d0d0d;
+  padding: 0 4.5em;
+  column-gap: 16px;
+  grid-row: 2/6;
+}
+
+#about h1 {
+  font-size: 56px;
+  margin: 1em 0 1em;
+}
+
+#about img {
+  margin: 1em 0 1em;
   width: 250px;
-  height: 350px;
+  height: auto;
   border-radius: 50%;
-  transition: all .5s linear;
-}
-.flip{
-    transform:translateY(50px);
-    transition: all .5s linear;
+  box-shadow: 0px 0px 12px #0d0d0d;
 }
