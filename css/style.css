@@ -68,7 +68,7 @@ body {
       0%,
       2fr
     );
-  grid-template-rows: 16px 68px 311px 486px;
+  grid-template-rows: 16px 68px 311px minmax(520px, 546px);
 }
 nav {
   grid-row: 2/2;
@@ -76,7 +76,8 @@ nav {
   margin: 1.5em 0;
 }
 #home .top,
-#knowledge {
+#knowledge,
+#projects {
   margin: 6em 0em;
 }
 #home {
@@ -85,6 +86,10 @@ nav {
 }
 #knowledge {
   grid-row: 4/5;
+  grid-column: 3/4;
+}
+#projects {
+  grid-row: 5/6;
   grid-column: 3/4;
 }
 h1,
@@ -191,8 +196,6 @@ nav li:nth-child(3) {
   height: 286px;
   margin: 0 1em;
 }
-#knowledge .right {
-}
 #knowledge .right img {
   width: 58px;
   height: auto;
@@ -241,7 +244,57 @@ nav li:nth-child(3) {
   grid-column: 3/4;
   grid-row: 3/4;
 }
-
+#projects {
+  background: linear-gradient(to right, #2122261F, #5f66731F, #2122261F);
+}
+#projects .bg {
+  display: grid;
+  grid-template-columns: minmax(17px, 217px) 1fr 1fr 1fr minmax(17px, 217px);
+  grid-template-rows: 46px repeat(2, 200px) 16px;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin: 12px 0;
+  background: linear-gradient(to right, #212226, #5f6673, #212226);
+  
+}
+#projects h3 {
+  grid-column: 1/6;
+}
+#projects a {
+  background-color: #343840;
+  margin: auto 0;
+  border-radius: 100px 0 100px 0;
+}
+#projects a img {
+  width: 198px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#projects a:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#projects a:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#projects a:nth-child(4) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+#projects a:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#projects a:nth-child(6) {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+#projects a:nth-child(7) {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
 @media only screen and (min-width: 801px) {
   #mobile {
     display: none;
@@ -249,20 +302,4 @@ nav li:nth-child(3) {
 }
 
 @media only screen and (max-width: 800px) {
-  body nav,
-  body #home,
-  body #knowledge {
-    display: none;
-  }
-  #mobile {
-    display: block;
-    width: 100%;
-  }
-  #mobile p {
-    color: red;
-    font-size: 78px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-  }
 }
