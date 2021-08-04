@@ -1,0 +1,94 @@
+/*FONTS*/
+@font-face {
+    font-family: 'Raleway';
+    src: url("/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway-italic';
+    src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
+
+/*FONTS*/
+
+/*DEFAULTS*/
+/****varibles and Mixin****/
+$bg: #212226;
+$font: #F2F2F2;
+
+@mixin hover {
+    opacity: .97;
+    text-decoration: underline;
+    color: $font;
+    transition: all .3s linear;
+}
+
+/****varibles and Mixin****/
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: 'Raleway';
+        color: $font;
+    }
+}
+
+body {
+    background-color: $bg !important;
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    span {
+        color: $font;
+        font-size: 24px;
+    }
+
+    p {
+        color: $font;
+        font-size: 18px;
+    }
+
+    a {
+        color: $font;
+        font-size: 16px;
+    }
+
+    section {
+        margin: 5rem 0;
+    }
+
+}
+
+/*DEFAULTS*/
+/*NAVBAR*/
+#navbar {
+    margin-top: 1rem;
+    li {
+        margin-right: 3.5rem;
+    }
+
+    a {
+        color: $font;
+        font-weight: 300;
+    }
+
+    :hover {
+        @include hover;
+    }
+}
+
+#typewrite {
+    background-image: linear-gradient(66deg, $bg,$bg, #2122269c),url("/imgs/bgtop.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11em 0;
+    margin: 1rem 0;
+}
+
+/*NAVBAR*/

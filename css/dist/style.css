@@ -1,75 +1,67 @@
 /*FONTS*/
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   src: url("/fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
-
 @font-face {
-  font-family: 'Raleway-italic';
+  font-family: "Raleway-italic";
   src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
-
 /*FONTS*/
 /*DEFAULTS*/
 /****varibles and Mixin****/
 /****varibles and Mixin****/
 h1 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 h2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 h3 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 h4 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 h5 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 h6 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: #F2F2F2;
 }
 
 body {
   background-color: #212226 !important;
 }
-
 body h1 {
   font-size: 46px;
 }
-
 body h2 {
   font-size: 42px;
 }
-
 body span {
   color: #F2F2F2;
   font-size: 24px;
 }
-
 body p {
   color: #F2F2F2;
   font-size: 18px;
 }
-
 body a {
   color: #F2F2F2;
   font-size: 16px;
 }
-
 body section {
   margin: 5rem 0;
 }
@@ -79,22 +71,18 @@ body section {
 #navbar {
   margin-top: 1rem;
 }
-
 #navbar li {
   margin-right: 3.5rem;
 }
-
 #navbar a {
   color: #F2F2F2;
   font-weight: 300;
 }
-
 #navbar :hover {
-  opacity: .97;
+  opacity: 0.97;
   text-decoration: underline;
   color: #F2F2F2;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 #typewrite {
@@ -107,4 +95,3 @@ body section {
 }
 
 /*NAVBAR*/
-/*# sourceMappingURL=style.css.map */
