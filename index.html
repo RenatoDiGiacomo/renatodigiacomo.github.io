@@ -5,72 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Renato Di Giacomo</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#knowledge">Sobre</a></li>
-        <li><a href="#projects">Portfólio</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-    <section id="home">
-      <div class="top">
+  <body class="container">
+    <header class="row">
+      <nav class="col-lg-12">
+        <ul class="nav" id="navbar">
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Portifólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="row" id="typewrite">
+      <div class="col-lg-6">
         <h1>Renato Di Giacomo</h1>
-        <h2>Desenvolvedor Front-End</h2>
+        <span>Programador Front-End</span>
       </div>
     </section>
-    <section id="knowledge">
-      <div class="left">
-        <h3>Quem sou eu?</h3>
-        <div class="text">
-          <img src="imgs/foto.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-            architecto porro vel id. Delectus quaerat eligendi ex vel magni sint
-            minima consequatur temporibus, similique dolore? Qui quam distinctio
-            incidunt cum. Eveniet dolores maiores distinctio consectetur,
-            dolorum quibusdam veniam. Blanditiis ratione officiis tempore
-            molestias sit deserunt, dolor numquam iure voluptate beatae illo! A,
-            doloribus nostrum? Iste doloremque itaque rem numquam corporis!
-          </p>
+    <section class="row" id="middle">
+      <div class="col-lg-6">
+        <h2>Quem sou eu?</h2>
+        <img
+          src="imgs/foto.jpg"
+          alt=""
+          class="img-thumbnail float-end d-block"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate
+          at reprehenderit amet, assumenda quibusdam nisi, consequuntur dolorem
+          accusantium ipsum possimus sint non sed tenetur, temporibus quia fugit
+          doloribus distinctio. Quos, ut beatae! Ea inventore, expedita nemo
+          libero ducimus a iste necessitatibus ipsa sequi laboriosam modi iusto,
+          non debitis alias officiis delectus quas dolorem dolore quasi
+          voluptas. Exercitationem, nostrum aliquam!
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="col-lg-12">
+          <img src="/imgs/html.png" alt="" class="img-fluid w-25" />
+          <span>teste</span>
+        </div>
+        <div class="col-lg-12">
+          <img src="/imgs/css.png" alt="" class="img-fluid w-25" />
+          <span>teste</span>
+        </div>
+        <div class="col-lg-12">
+          <img src="/imgs/js.png" alt="" class="img-fluid w-25" />
+          <span>teste</span>
         </div>
       </div>
-      <div class="middle"></div>
-      <div class="right">
-        <div class="html"><img src="imgs/html.png" alt="" /></div>
-        <span></span>
-        <div class="css"><img src="imgs/css.png" alt="" /></div>
-        <span></span>
-        <div class="js"><img src="imgs/js.png" alt="" /></div>
-        <span></span>
+    </section>
+    <section class="row" id="port">
+      <h3>Portifólio</h3>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
+      </div>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
+      </div>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
+      </div>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
+      </div>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
+      </div>
+      <div class="col-lg-4 d-flex my-3 justify-content-center">
+        <img src="imgs/github-logo-white.png" alt="" class="bg-dark img-fluid">
       </div>
     </section>
-    <section id="projects">
-      <div class="bg">
-        <h3>Portfólio</h3>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-        <a href=""><img src="imgs/github-logo-white.png" alt="" /></a>
-      </div>
-    </section>
-    <section id="contact">
+    <section class="row" id="ctt">
       <h3>Contato</h3>
-      
-        <a href=""><img src="icons/email.png" alt=""></a>
-        <a href=""><img src="icons/linkedin.png" alt=""></a>
-        <a href=""><img src="icons/whatsapp.png" alt=""></a>
-      
-      
-        <a href="">Meu Curriculo Vitae</a>
-     
+      <div class="col-lg-4 d-flex justify-content-center">
+        <img src="/icons/email.png" alt="" class="">
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <img src="/icons/linkedin.png" alt="" class="">
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <img src="/icons/whatsapp.png" alt="" class="">
+      </div>
     </section>
-    <footer>
-      <p>Projetado e desenvolvido por Renato Di Giacomo</p>
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
